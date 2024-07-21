@@ -4,7 +4,7 @@ export const getUser = () => ({
   username: "ESDFASda",
 });
 
-const getUsuarioActivo = (nombre) => ({
+export const getUsuarioActivo = (nombre) => ({
   uid: "ABC145",
   username: nombre,
 });
