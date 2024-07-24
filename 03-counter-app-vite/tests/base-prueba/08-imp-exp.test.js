@@ -2,7 +2,6 @@ import {
   getHeroeById,
   getHeroesByOwner,
 } from "../../src/base-prueba/08-imp-exp";
-import heroes from "../../src/data/heroes";
 
 describe("Pruebas en 08-imp-exp", () => {
   test("getHeroById debe de retornar un heroe por ID", () => {
