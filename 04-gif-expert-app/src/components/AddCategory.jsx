@@ -1,7 +1,8 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-export const AddCategory = ({ onAddCategory }) => {
-  const [inputValue, setInputValue] = useState("Luffy");
+export const AddCategory = ({ onNewCategory }) => {
+  const [inputValue, setInputValue] = useState("");
 
   const onInputChange = ({ target }) => {
     setInputValue(target.value);
@@ -11,8 +12,9 @@ export const AddCategory = ({ onAddCategory }) => {
     event.preventDefault();
     if (inputValue.trim().length <= 1) return;
 
-    onAddCategory((categories) => [inputValue, ...categories]);
+    // onAddCategory((categories) => [inputValue, ...categories]);
     setInputValue("");
+    onNewCategory(inputValue.trim());
   };
 
   return (
@@ -21,8 +23,12 @@ export const AddCategory = ({ onAddCategory }) => {
         type="text"
         placeholder="Buscar gifs"
         value={inputValue}
-        onChange={onInputChange}
+        onChange={(e) => onInputChange(e)}
       ></input>
     </form>
   );
+};
+
+AddCategory.propType = {
+  onNewCategory: PropTypes.func.isRequired,
 };
