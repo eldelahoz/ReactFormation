@@ -7,7 +7,7 @@ exports[`Pruebas para <GifItem/> Evaluar un snapshot 1`] = `
   >
     <img
       alt="Luffy"
-      src="https://luffy.com/onepiece.jpg"
+      src="http://luffy.com/onepiece.jpg"
     />
     <p>
       Luffy

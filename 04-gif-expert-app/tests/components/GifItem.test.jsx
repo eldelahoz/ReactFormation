@@ -6,7 +6,7 @@ import { GifItem } from "../../src/components/GifItem";
 
 describe("Pruebas para <GifItem/>", () => {
   const title = "Luffy";
-  const url = "https://luffy.com/onepiece.jpg";
+  const url = "http://luffy.com/onepiece.jpg";
 
   test("Evaluar un snapshot", () => {
     const { container } = render(<GifItem title={title} url={url} />);
