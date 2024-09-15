@@ -9,12 +9,13 @@ import { createRoot } from "react-dom/client";
 // import { FocusScreen } from "./04-useRef/FocusScreen";
 // import { Layout } from "./05-useLayoutEffect/Layout";
 // import { Memorize } from "./06-memos/Memorize";
-import { MemeHook } from "./06-memos/MemoHook";
+// import { MemeHook } from "./06-memos/MemoHook";
 
 import "./index.css";
+import { CallbackHook } from "./06-memos/CallbackHook";
 
 createRoot(document.getElementById("root")).render(
   // <StrictMode>
-  <MemeHook />
+  <CallbackHook />
   //</StrictMode>
 );
